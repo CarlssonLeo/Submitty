@@ -79,7 +79,7 @@ class Database:
         :type query: str
         :rtype: sqlalchemy.engine.ResultProxy
         """
-        return self.session.execute(query)
+        return self.session.execute(text(query))
 
     def commit(self):
         """Run commit on the current session."""
