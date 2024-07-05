@@ -4,7 +4,7 @@
 
 - name: Install Submitty
   hosts: submitty
-  remote_user: ubuntu
+  remote_user: leo
   become: true
   tasks:
     - name: Install Submitty
@@ -12,4 +12,4 @@
         name: submitty_install
       vars:
         # add overriding variables here
-        submitty_install_submitty_version: main  # Replace main with version, eg. v24.02.00
+        submitty_install_submitty_version: v24.06.00  # Replace main with version, eg. v24.02.00
